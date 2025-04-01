@@ -1,0 +1,189 @@
+.installment-form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 527px;
+	padding: 0 10px 0 100px;
+	border-radius: 100px;
+	background: #fbfdfc;
+
+	&__content {
+		max-width: 540px;
+		width: 100%;
+	}
+
+	&__aside {
+		max-width: 50%;
+	}
+
+	&__aside img {
+		object-fit: contain;
+	}
+
+	&__title {
+		color: #0073b4;
+		font-family: 'Playfair Display';
+		font-size: 48px;
+		font-weight: 800;
+		line-height: normal;
+		margin-bottom: 0;
+	}
+
+	&__subtitle {
+		color: #000;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.35;
+		margin-bottom: 20px;
+		max-width: 390px;
+	}
+
+	&__img {
+		width: 525px;
+		aspect-ratio: 1 / 1;
+	}
+
+	.form-control {
+		color: #525252;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 135%;
+		border-radius: 0px;
+		border: 1px solid #0073b4;
+		padding: 15px;
+		margin-bottom: 10px;
+	}
+
+	.form-control:focus,
+	.form-control:active {
+		box-shadow: 0px 0px 0px 1px #0073b4;
+		border-color: #0073b4;
+	}
+
+	.agreement {
+		margin-bottom: 10px;
+	}
+
+	.agreement label {
+		padding-left: 35px;
+	}
+
+	.agreement .form-group-text {
+		color: #000;
+		margin-bottom: 10px;
+		font-family: Roboto;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%;
+	}
+
+	.agreement .form-group-text a {
+		color: #0073b4;
+		text-decoration: underline;
+	}
+
+	.agreement input + label:before {
+		background: url(https://dobruy-doctor.msk.ru/assets/img/vacancy/check-empty.svg)
+			0 0 no-repeat;
+		content: '';
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 2px;
+		left: 0px;
+	}
+
+	.agreement input:checked + label:before {
+		background: url(https://dobruy-doctor.msk.ru/assets/img/vacancy/new-checked.svg)
+			0 0 no-repeat;
+	}
+
+	.btn {
+		display: flex;
+		padding: 20px 45px;
+		border-radius: 8px;
+		background: #0073b4;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 1239px) {
+	.installment-form {
+		padding: 0 10px 0 10px;
+
+		&__content {
+			max-width: 50%;
+		}
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 5px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			max-width: 320px;
+		}
+
+		&__img {
+			width: 400px;
+		}
+
+		.agreement .form-group-text {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.installment-form {
+		flex-direction: column;
+		height: auto;
+		padding: 20px 10px 20px 10px;
+		border-radius: 20px;
+		justify-content: center;
+
+		&__content {
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__aside {
+			max-width: 100%;
+		}
+
+		&__title {
+			font-size: 28px;
+			margin-bottom: 5px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			max-width: unset;
+		}
+
+		&__img {
+			width: 100%;
+			height: 100%;
+			max-width: 300px;
+		}
+
+		.agreement .form-group-text {
+			font-size: 16px;
+		}
+
+		.btn {
+			font-size: 12px;
+		}
+	}
+}

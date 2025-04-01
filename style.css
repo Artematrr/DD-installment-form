@@ -1,0 +1,160 @@
+.installment-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 527px;
+  padding: 0 10px 0 100px;
+  border-radius: 100px;
+  background: #fbfdfc;
+}
+.installment-form__content {
+  max-width: 540px;
+  width: 100%;
+}
+.installment-form__aside {
+  max-width: 50%;
+}
+.installment-form__aside img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.installment-form__title {
+  color: #0073b4;
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.installment-form__subtitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 20px;
+  max-width: 390px;
+}
+.installment-form__img {
+  width: 525px;
+  aspect-ratio: 1/1;
+}
+.installment-form .form-control {
+  color: #525252;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%;
+  border-radius: 0px;
+  border: 1px solid #0073b4;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.installment-form .form-control:focus,
+.installment-form .form-control:active {
+  box-shadow: 0px 0px 0px 1px #0073b4;
+  border-color: #0073b4;
+}
+.installment-form .agreement {
+  margin-bottom: 10px;
+}
+.installment-form .agreement label {
+  padding-left: 35px;
+}
+.installment-form .agreement .form-group-text {
+  color: #000;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.installment-form .agreement .form-group-text a {
+  color: #0073b4;
+  text-decoration: underline;
+}
+.installment-form .agreement input + label:before {
+  background: url(https://dobruy-doctor.msk.ru/assets/img/vacancy/check-empty.svg) 0 0 no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 2px;
+  left: 0px;
+}
+.installment-form .agreement input:checked + label:before {
+  background: url(https://dobruy-doctor.msk.ru/assets/img/vacancy/new-checked.svg) 0 0 no-repeat;
+}
+.installment-form .btn {
+  display: flex;
+  padding: 20px 45px;
+  border-radius: 8px;
+  background: #0073b4;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1239px) {
+  .installment-form {
+    padding: 0 10px 0 10px;
+  }
+  .installment-form__content {
+    max-width: 50%;
+  }
+  .installment-form__title {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .installment-form__subtitle {
+    font-size: 20px;
+    max-width: 320px;
+  }
+  .installment-form__img {
+    width: 400px;
+  }
+  .installment-form .agreement .form-group-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .installment-form {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  .installment-form__content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .installment-form__aside {
+    max-width: 100%;
+  }
+  .installment-form__title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .installment-form__subtitle {
+    font-size: 16px;
+    max-width: unset;
+  }
+  .installment-form__img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+  }
+  .installment-form .agreement .form-group-text {
+    font-size: 16px;
+  }
+  .installment-form .btn {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
